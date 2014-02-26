@@ -5,7 +5,8 @@ var MainRouter = Backbone.Router.extend({
 		"about" : "aboutPage",
 		"contact" : "contactPage",
 		"rivers" : "riverSection",
-		"trails" : "trailSection"
+		"trails" : "trailSection",
+		"waterfalls" : "waterfallSection"
 	},
 
 	initialize: function(){
@@ -30,5 +31,9 @@ var MainRouter = Backbone.Router.extend({
 
 	trailSection: function(){
 		new TrailView()
+	},
+
+	waterfallSection: function(){
+		new WaterfallView()
 	}
 });

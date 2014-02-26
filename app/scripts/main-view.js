@@ -66,6 +66,8 @@ var ContactPageView = Backbone.View.extend({
 
 var RiverView = Backbone.View.extend({
 
+		className: "river-photo",
+
 		createTemplate: _.template($('#river-page-template').text()),
 
 		initialize: function(){
@@ -86,7 +88,31 @@ var RiverView = Backbone.View.extend({
 
 var TrailView = Backbone.View.extend({
 
+		className: "trail-photo",
+
 		createTemplate: _.template($('#trail-page-template').text()),
+
+		initialize: function(){
+			$('.featured-park').html(this.el);
+
+			this.render();
+		},
+
+		render: function(){
+
+			var renderedTemplate = this.createTemplate(this.model);
+			this.$el.html(renderedTemplate)
+
+		}
+});
+
+// Waterfall Page View
+
+var WaterfallView = Backbone.View.extend({
+
+		className: "waterfall-photo",
+
+		createTemplate: _.template($('#waterfall-page-template').text()),
 
 		initialize: function(){
 			$('.featured-park').html(this.el);
