@@ -61,3 +61,43 @@ var ContactPageView = Backbone.View.extend({
 
 		}
 });
+
+// River Page View
+
+var RiverView = Backbone.View.extend({
+
+		createTemplate: _.template($('#river-page-template').text()),
+
+		initialize: function(){
+			$('.featured-park').html(this.el);
+
+			this.render();
+		},
+
+		render: function(){
+
+			var renderedTemplate = this.createTemplate(this.model);
+			this.$el.html(renderedTemplate)
+
+		}
+});
+
+// Trail Page View
+
+var TrailView = Backbone.View.extend({
+
+		createTemplate: _.template($('#trail-page-template').text()),
+
+		initialize: function(){
+			$('.featured-park').html(this.el);
+
+			this.render();
+		},
+
+		render: function(){
+
+			var renderedTemplate = this.createTemplate(this.model);
+			this.$el.html(renderedTemplate)
+
+		}
+});

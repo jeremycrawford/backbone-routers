@@ -38,13 +38,10 @@
             </div>
 
             <div class="jumbotron">
+                <p><a class="btn btn-lg btn-success" href="#enter">Enter</a></p>
             </div>
 
-            <div class="row marketing">
-                <div class="col-lg-6 pizza-list-js">
-
-                </div>
-            </div>
+            <div class="featured-park"></div>
 
             <div class="footer">
                 <p>♥ from the Yeoman team</p>
@@ -52,9 +49,25 @@
 
         </div>
 
+
+        <!-- Home Page Template -->
         <script type="text/template" id="home-page-template">
             <h1>WELCOME</h1>
+            <div class="jumbotron">
+                <div class="row marketing">
+                    <div class="col-sm-4">
+                        <span><a class="btn btn-lg btn-success" href="#rivers">Rivers</a></span>
+                    </div>
+                    <div class="col-sm-4">
+                        <span><a class="btn btn-lg btn-success" href="#trails">Trails</a></span>
+                    </div>
+                    <div class="col-sm-4">
+                        <span><a class="btn btn-lg btn-success" href="#historical">Historical</a></span>
+                    </div>
+                </div>
+            </div>
         </script>
+
 
         <script type="text/template" id="about-page-template">
             <h3>Mount Cook National Park</h3>
@@ -64,6 +77,24 @@
 
         <script type="text/template" id="contact-page-template">
             <p>Please contact us at 1-800-MAD-BEAR</p>                
+        </script>
+
+        <script type="text/template" id="river-page-template">
+            <div class="jumbotron">
+                <img src="http://www.fs.usda.gov/Internet/FSE_MEDIA/stelprdb5253884.jpg"> 
+            </div>               
+        </script>
+
+        <script type="text/template" id="trail-page-template">
+            <div class="jumbotron">
+                <img src="http://stokedproject.com/wp-content/uploads/2013/05/trail.jpg"> 
+            </div>               
+        </script>
+
+        <script type="text/template" id="historical-page-template">
+            <div class="jumbotron">
+                <img src="http://www.fs.usda.gov/Internet/FSE_MEDIA/stelprdb5253884.jpg"> 
+            </div>               
         </script>
 
 
@@ -101,11 +132,9 @@
         <!-- endbuild -->
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/pizza-model.js"></script>
-        <script src="scripts/data.js"></script>
+        <script src="scripts/collection.js"></script>
         <script src="scripts/router.js"></script>
         <script src="scripts/main-view.js"></script>
-        <script src="scripts/about-page-view.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
 </body>

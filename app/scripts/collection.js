@@ -1,5 +1,5 @@
-// var Main = Backbone.Model.extend({});
+var ParkPics = Backbone.Model.extend({});
 
-// var MainCollection = Backbone.Collection.extend({
-// 	model: Main
-// })
+var ParkPicsCollection = Backbone.Collection.extend({
+	model: ParkPics
+})
