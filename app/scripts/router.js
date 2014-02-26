@@ -35,5 +35,6 @@ var MainRouter = Backbone.Router.extend({
 
 	waterfallSection: function(){
 		new WaterfallView()
+		
 	}
 });
